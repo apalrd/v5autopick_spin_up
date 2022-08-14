@@ -14,7 +14,7 @@
 #define LV_ATTRIBUTE_IMG_FIELD
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_FIELD uint8_t field_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_IMG_FIELD uint8_t field_map[] = {
   0xe2, 0xe2, 0xe2, 0xff, 	/*Color of index 0*/
   0x89, 0x89, 0x89, 0xff, 	/*Color of index 1*/
   0x82, 0x82, 0x82, 0xff, 	/*Color of index 2*/
