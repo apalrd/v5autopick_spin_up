@@ -62,10 +62,10 @@ static const char * btn_label[5] =
 };
 static const lv_align_t btn_align[5] = 
 {
-	LV_ALIGN_IN_TOP_LEFT,
-	LV_ALIGN_IN_BOTTOM_LEFT,
-	LV_ALIGN_IN_BOTTOM_RIGHT,
-	LV_ALIGN_IN_TOP_RIGHT,
+	LV_ALIGN_IN_LEFT_MID,
+	LV_ALIGN_IN_BOTTOM_MID,
+	LV_ALIGN_IN_RIGHT_MID,
+	LV_ALIGN_IN_TOP_MID,
 	LV_ALIGN_CENTER
 };
 
