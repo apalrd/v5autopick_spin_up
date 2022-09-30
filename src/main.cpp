@@ -173,4 +173,7 @@ void opcontrol()
 	 * the auto selector
 	 */
 	auto_clean();
+
+	/* You can still read the last selected values even after cleaning */
+	printf("Auto was position %d, color %d, index %d\n",auto_get_pos(),auto_get_color(), auto_get_active());
 }
