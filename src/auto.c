@@ -10,8 +10,8 @@
 
 /* System global variables */
 static int active_mode;
-static auto_pos_t active_pos;
-static auto_color_t active_color;
+static auto_pos_t active_pos = AUTO_POS_SKILLS;
+static auto_color_t active_color = AUTO_COLOR_SKILLS;
 static const auto_routine_t * local_auto_list;
 static size_t local_auto_length;
 static int active_auto;
@@ -436,4 +436,20 @@ void auto_run(void)
 	{
 		printf("ERROR: Auto picker tried to run program %s, but function pointer is invalid",local_auto_list[active_auto].name);
 	}
+}
+
+/* Get last selected color (or skills if none) */
+auto_color_t auto_get_color()
+{
+	return active_color;
+}
+/* Get last selected position (or skills if none) */
+auto_pos_t auto_get_pos()
+{
+	return active_pos;
+}
+/* Get last selected index into auto array (or -1 if none) */
+int auto_get_active()
+{
+	return active_auto;
 }

@@ -25,9 +25,9 @@ typedef enum
 /* Starting position enumeration */
 typedef enum
 {
+    AUTO_POS_SKILLS,
     AUTO_POS_1,
-    AUTO_POS_2,
-    AUTO_POS_SKILLS
+    AUTO_POS_2
 } auto_pos_t;
 
 /* Function prototype for autonomous function must be:
@@ -55,6 +55,13 @@ void auto_run(void);
 
 /* Function to clean up screen objects if you'd like to use the screen again */
 void auto_clean(void);
+
+/* Get last selected color (or skills if none) */
+auto_color_t auto_get_color();
+/* Get last selected position (or skills if none) */
+auto_pos_t auto_get_pos();
+/* Get last selected index into auto array (or -1 if none) */
+int auto_get_active();
 
 
 #ifdef __cplusplus
